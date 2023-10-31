@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blanka');
+
+/*Navigation bar*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Inter;
+}
+
+nav{
+    background: #110D0D;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+label.logo{
+    color: white;
+    font-family: blanka;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 120px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a:hover{
+    background: #353535;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #8f8f8f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background:none;
+        color: #353535;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/*Section 1: Title-Titulo*/
+
+.pImageWrap{
+    max-width: 100%;
+    max-height: 100%;
+    align-self: normal;
+    display: flex;
+    justify-content: center;
+}
+.pImage{
+    max-height: 100%;
+    width: 70%;
+    max-width: 100%;
+}
+
+.main-page {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr  1fr;
+    column-gap: 5px;
+    background-color: #EDEFEF;
+    padding-top: 80px;
+}
+
+.pText{
+    text-align: center;
+    font-size: 90px;
+    font-family: blanka;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 952px){
+    .pImage{
+        display: none;
+    }
+
+    .main-page{
+        display: block;
+        width: 100%;
+        background-color: #EDEFEF;
+    }
+
+    .pText h1{
+        display: block;
+        padding: 30px;
+        font-size: 90px;
+    }
+}
+
+/*2da Sección Descarga-Download*/
+
+
+
+.dText{
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 179px;
+    margin-top: 162px;
+    margin-bottom: 162px;
+    width: 70%;
+}
+
+.wrap-descarga-a{
+    padding: 1.5rem 0;
+    margin-top: 67px;
+    margin-bottom: 162px;
+    margin-left: 179px;
+}
+
+.descarga-a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+
+    background-color: black;
+    padding: 17px 27px;
+    border-radius: 10px;
+}
+
+.download-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+    column-gap: 5px;
+    background-color: #EDEFEF;
+}
+
+.wrap-dImage{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dImage{
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* 3era Seccion: About us*/
+
+.about-us-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 5px;
+    background-color: #EDEFEF;
+    height: 800px;
+}
+
+.wrap-about-us-title{
+    width: 50%;
+    padding: 100px;
+}
+
+.about-us-title{
+    font-size: 130px;
+    font-weight: 900;
+}
+
+.wrap-about-us-p{
+    padding-left: -70px;
+}
+
+.about-us-p{
+    width: 700px;
+    height: 300px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.abImage{
+    margin-top: -270px;
+    margin-right: 50px;
+    float: right;
+    width: 300.932px;
+    transform: rotate(18deg);
+    flex-shrink: 0;
+    z-index: -10;
+}
+
+/* About-us 2 */
+
+.about-us-mv{
+    background-color: #EDEFEF;
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'left left left right right right'
+}
+
+.banner-wrap{
+    width: 100%;
+    grid-area: header;
+}
+
+.banner{
+    width: 100%;
+}
+
+.mv-text-wrap{
+    display: table;
+    background: #DFDFDF;
+    width: 90%;
+    height: 336px;
+    margin: auto;
+}
+
+.mision-wrap{
+    grid-area: left;
+}
+
+.vision-wrap{
+    grid-area: right;
+}
+
+.title-mv{
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    background-color: #EDEFEF;
+}
+
+.text-mv{
+    vertical-align: middle;
+    display: table-cell;
+    padding: 80px 40px 80px 40px;
+    width: 75%;
+    height: 100%;
+    font-size: 36px;
+    line-height: normal;
+}
+
+/* Contact */
+
+.contact-page{
+    background-color: #EDEFEF;
+}
+
+.contact-title-wrap{
+    padding: 100px;
+}
+.contact-title{
+    font-size: 100px;
+}
+
+.contact-text-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px
+}
+
+.mail-img{
+    line-height: 50px;
+    max-height: 121px;
+    margin-top: 30px;
+}
+
+.phone-img{
+    line-height: 50px;
+    max-height: 121px;
+    margin-top: 30px;
+}
+
+.contact-info{
+    padding: 30px;
+    font-size: 100px;
+}
+
+footer{
+    background: #E4E4E4;
+    height: 190px;
+}
+
+.logo-footer{
+    float: right;
+    font-family: blanka;
+    font-size: 70px;
+    padding: 30px;
+}
+
+.footer-info{
+    float: left;
+    padding: 30px;
+}
+
+.last-item{
+    margin-top: 30px;
+}
