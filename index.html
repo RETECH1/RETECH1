@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://kit.fontawesome.com/af69a02321.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
@@ -33,7 +34,7 @@
   
   <section id="descargar" class="download-page">
     <div class="wrap-download-text">
-      <p class="dText">Convierte tuscomponentes electrónicos endesuso enoportunidades</p>
+      <p class="dText">Convierte tus componentes electrónicos en desuso en oportunidades</p>
       <div class = "wrap-descarga-a">
           <a href="#" class = "descarga-a">Descargar</a>
       </div>
@@ -80,7 +81,58 @@
     </div>
   </section>
   <section id="beneficios" class="benefits-page">
-
+    <div class="benefits-title-wrap">
+      <h1 class="benefits-title">Beneficios</h1>
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+      <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide-content-wrap">
+            <div class="slide-content-img">
+              <img src="img/slide-1-img.png">
+            </div>
+            <div class="slide-content-text">
+              <p>Tendrás una forma sencilla y responsable de deshacerse de dispositivos antiguos</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content-wrap">
+            <div class="slide-content-img">
+              <img src="img/slide-2-img.png">
+            </div>
+            <div class="slide-content-text">
+              <p>Acceso a componentes reacondicionados de calidad a precios asequibles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content-wrap">
+            <div class="slide-content-img">
+              <img src="img/slide-3-img.png">
+            </div>
+            <div class="slide-content-text">
+              <p>Seguridad y protección de datos guardados en los dispositivos móviles, nos aseguraremos de que la información guardada sea eliminada antes de darles un segundo uso en el mercado. </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content-wrap">
+            <div class="slide-content-img">
+              <img src="img/slide-4-img.png">
+            </div>
+            <div class="slide-content-text">
+              <p>Tendras un porcentaje de la venta del producto reacondicionado. El porcentaje dependera del estado del producto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      </div>
   </section>
 
   <section id="contactanos" class="contact-page">
@@ -109,5 +161,7 @@
       <label class="logo-footer">RETECH</label>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 </html>
