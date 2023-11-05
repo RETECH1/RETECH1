@@ -289,6 +289,7 @@ a:hover{
     display: table;
     background: #DFDFDF;
     width: 90%;
+    max-height: 336px;
     height: 336px;
     margin: auto;
 }
@@ -316,6 +317,64 @@ a:hover{
     height: 100%;
     font-size: 36px;
     line-height: normal;
+}
+/* Benefits */
+
+.benefits-page{
+    background-color: #EDEFEF;
+}
+
+.benefits-title{
+    padding: 50px;
+    font-size: 100px;
+}
+
+/*swiper*/
+
+.swiper{
+    width: 90%;
+    height: 600px;
+}
+
+.swiper-wrapper{
+    width: 100%;
+}
+
+.swiper-slide{
+    margin-right: 30px;
+    border-radius: 20px;
+    background: #EFF6EC;
+    font-size: 40px;
+}
+
+.slide-content-wrap{
+    display: flex;
+    height: 100%;
+    padding: 30px;
+}
+
+.slide-content-img{
+    height: 100%;
+    padding: 30px;
+}
+
+.slide-content-img img{
+    display: block;
+    margin-top: 171px;
+    height: 28%;
+}
+
+.slide-content-text{
+    display: table;
+    height: 100%; /* No se mueve*/
+    text-align: center;
+    padding: 30px;
+}
+
+.slide-content-wrap p{
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 600;
 }
 
 /* Contact */
