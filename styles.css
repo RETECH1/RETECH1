@@ -135,12 +135,92 @@ a:hover{
     padding-top: 80px;
 }
 
-.pText{
+
+.from-content{
+    width: 100%;
+    max-width: 450px;
+    background-color: #DFDFDF;
+    padding: 50px 60px 70px;
+    margin-left: 30%;
     text-align: center;
-    font-size: 90px;
-    font-family: blanka;
-    letter-spacing: 2px;
+    border-radius: 30px;
+    font-family: Inter;
 }
+
+.from-content h1{
+    font-size: 30px;
+    margin-bottom: 60px; 
+    color:#000;
+    position: relative;
+}
+
+.from-content h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #04BD7D;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    background-color: #8f8f8f;
+    margin: 15px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: max-heigt 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.input-field i{
+    margin-left: 15px;
+}
+
+form a{
+    color: rgb(55, 0, 255);
+    font-size: 13px;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    font-size: 16px;
+    /*margin: 12px;*/
+    background-color: #04BD7D;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 250px;
+}
+
+
 
 @media(max-width: 952px){
     .pImage{
