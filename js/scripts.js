@@ -16,3 +16,8 @@ signUp.onclick=function(){
     signUp.classList.remove("disable");
     signIn.classList.add("disable");
 }
+
+function prompter() {
+    var reply = prompt("Ingrese su correo electrónico", "")
+    alert ( "Le avisaremos a través de su correo nuestras novedades!")
+    }
